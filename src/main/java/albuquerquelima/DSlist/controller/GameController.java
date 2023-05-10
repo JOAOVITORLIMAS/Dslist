@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import albuquerquelima.DSlist.entities.Game;
+import albuquerquelima.DSlist.DTO.GameMinDTO;
 import albuquerquelima.DSlist.services.GameService;
 
 @RestController

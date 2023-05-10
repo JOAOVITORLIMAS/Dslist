@@ -1,4 +1,4 @@
-package albuquerquelima.DSlist.controller;
+package albuquerquelima.DSlist.DTO;
 
 import albuquerquelima.DSlist.entities.Game;
 

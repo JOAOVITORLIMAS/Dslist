@@ -1,5 +1,6 @@
 package albuquerquelima.DSlist.DTO;
 
+import albuquerquelima.DSlist.entities.GameList;
 
 public class GameListDTO {
     
@@ -9,10 +10,20 @@ public class GameListDTO {
     public GameListDTO () {
     }
 
-    public GameListDTO(Long id, String name) {
-        this.id = id;
-        this.name = name;
+    public GameListDTO(GameList entity) {
+        id = entity.getId();
+        name = entity.getName();
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    
 
     
 }

@@ -1,6 +1,7 @@
 package albuquerquelima.DSlist.DTO;
 
 import albuquerquelima.DSlist.entities.Game;
+import albuquerquelima.DSlist.projections.GameMinProjection;
 
 public class GameMinDTO {
     
@@ -18,10 +19,16 @@ public class GameMinDTO {
             title = entity.getTitle();
             year = entity.getYear();
             imgUrl = entity.getImgUrl();
-            shortDescription = entity.getShortDescription();
-    
+            shortDescription = entity.getShortDescription();          
     }
 
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
+    }    
     public Long getId() {
         return id;
     }
